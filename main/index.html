@@ -104,10 +104,16 @@
             <div class="ui-block-c">
                 <form>
                     <h2>Application Form</h2>
-                    <input type="radio" name="radio-choice-cat" id="radio-cat" value="cat" checked="false">
-                    <label for="radio-cat">Cat</label>
-                    <input type="radio" name="radio-choice-dog" id="radio-dog" value="dog" checked="false">
-                    <label for="radio-dog">Dog</label>
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <label for="radio-cat">Cat</label>
+                            <input type="radio" name="radio-choice-cat" id="radio-cat" value="cat" checked="true">
+                        </div>
+                        <div class="ui-block-b">
+                            <input type="radio" name="radio-choice-dog" id="radio-dog" value="dog" checked="false">
+                            <label for="radio-dog">Dog</label>
+                        </div>
+                    </div>
                     <label for="numDays">Number of Days</label>
                     <textarea name="numDays" id="numDays" placeholder="Numbers of Days"></textarea>
                     <label for="petName">Pet Name</label>
