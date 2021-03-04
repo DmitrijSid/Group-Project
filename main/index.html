@@ -10,7 +10,7 @@
     <title>Pet Hotel</title>
 </head>
 <body>
-<div data-role="page" id="freePage" data-theme="a">
+<div data-role="page" id="mainPage" data-theme="a">
 
     <!--Header-->
     <div data-role="header">
@@ -27,9 +27,9 @@
         <div data-role="main" class="ui-content">
             <div class="ui-grid-c">
                 <div class="ui-block-a">
-                    <img src="themes/images/kitten-test.jpg" style="max-height: 300px; max-width: 400px;">
+                    <img class="headerImg" src="themes/images/kitten-test.jpg" style="max-height: 300px; max-width: 400px;">
                 </div>
-                <div class="ui-block-b" align="center">
+                <div class="ui-block-b">
                     <h1>Kittens</h1>
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -41,7 +41,7 @@
                         software like Aldus PageMaker including versions of Lorem Ipsum.
                     </p>
                 </div>
-                <div class="ui-block-c" align="center">
+                <div class="ui-block-c" >
                     <h1>Dog's</h1>
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -53,12 +53,13 @@
                         software like Aldus PageMaker including versions of Lorem Ipsum.
                     </p>
                 </div>
-                <div class="ui-block-d" align="right">
-                    <img src="themes/images/puppy-test.jpg" style="max-height: 300px; max-width: 400px">
+                <div class="ui-block-d">
+                    <img  class="headerImg" src="themes/images/puppy-test.jpg" style="max-height: 300px; max-width: 400px">
                 </div>
             </div>
         </div>
         <!--/Content for Header-->
+
         <!--/Header-->
 
         <!--Nav Bar--->
@@ -75,7 +76,7 @@
     <!--/NavBar-->
     <!--TODO need to align ALL containers to the center, plan to make width only 1400pixels some free space on the sides can be used in the future-->
     <!--Main Content-->
-    <div data-role="main" class="ui-content" style="width: 1400px;" >
+    <div data-role="main" class="ui-content mainContent">
         <!--Main Content First Grid with three blocks for content-->
         <div class="ui-grid-b">
             <div class="ui-block-a">
@@ -107,7 +108,7 @@
                     <div class="ui-grid-a">
                         <div class="ui-block-a">
                             <label for="radio-cat">Cat</label>
-                            <input type="radio" name="radio-choice-cat" id="radio-cat" value="cat" checked="true">
+                            <input type="radio" name="radio-choice-cat" id="radio-cat" value="cat" checked="false">
                         </div>
                         <div class="ui-block-b">
                             <input type="radio" name="radio-choice-dog" id="radio-dog" value="dog" checked="false">
