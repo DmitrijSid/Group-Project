@@ -34,7 +34,30 @@
 
 
     <div data-role="main" class="ui-content">
+        <fieldset class="ui-grid-a">
+            <div class="ui-block-a">
+                <form method="post" action="EMAIL ADDRESS">
+                    <label for="fname">First name:</label>
+                    <input type="text" name="fname" id="fname">
+                    <label for="sname">Surname:</label>
+                    <input type="text" name="sname" id="sname">
+                    <label for="sname">Phone:</label>
+                    <input type="text" name="phone" id="phone"  required  pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-9999">
+                    <label for="sname">Email:</label>
+                    <input type="text" name="email" id="email" input type="email" name="email" id="email" required>
+                    <label for="textarea-a">Message:</label>
+                    <textarea name="textarea" id="textarea-a" placeholder=""></textarea>
+                    <input type="submit" name="submit" id="submit" value="Submit" />
+                </form>
+            </div>
 
+            <div class="ui-block-b">
+                <h1>Map</h1>
+                <div role="maiin" class="ui-content" id="map-canvas">
+                    <!--map displays here-->
+                </div>
+            </div>
+        </fieldset>
     </div>
 
     <div data-role="footer" data-position="fixed">
